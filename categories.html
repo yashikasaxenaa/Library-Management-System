@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            overflow: auto;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .category-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .category-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(52, 152, 219, 0.7); /* Overlay color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .category-card:hover .category-overlay {
+            opacity: 1;
+        }
+
+        .category-overlay h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .category-overlay p {
+            color: #fff;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="feature.html">Featured</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Explore Our Categories</h2>
+        
+        <!-- Category Grid -->
+        <div class="category-grid">
+            <!-- Category 1 -->
+            <div class="category-card">
+                <img src="fiction.jpg" alt="Fiction Books">
+                <div class="category-overlay">
+                    <h3>Fiction</h3>
+                    <p>Discover captivating fictional stories.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Fiction</a>
+                </div>
+            </div>
+
+            <!-- Repeat for other categories -->
+
+            <!-- Category 2 -->
+            <div class="category-card">
+                <img src="science.jpg" alt="Science Books">
+                <div class="category-overlay">
+                    <h3>Science</h3>
+                    <p>Delve into the wonders of science and exploration.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Science</a>
+                </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="category-card">
+                <img src="self-help.jpg" alt="Self-Help Books">
+                <div class="category-overlay">
+                    <h3>Self-Help</h3>
+                    <p>Find inspiration and guidance for personal growth.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Self-Help</a>
+                </div>
+            </div>
+
+            <!-- Additional categories -->
+
+            <!-- Category 4 -->
+            <div class="category-card">
+                <img src="fantasy.jpg" alt="Fantasy Books">
+                <div class="category-overlay">
+                    <h3>Fantasy</h3>
+                    <p>Embark on magical journeys in the realm of fantasy.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Fantasy</a>
+                </div>
+            </div>
+
+            <!-- Category 5 -->
+            <div class="category-card">
+                <img src="biography.jpg" alt="Biography Books">
+                <div class="category-overlay">
+                    <h3>Biography</h3>
+                    <p>Discover the life stories of inspiring individuals.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Biography</a>
+                </div>
+            </div>
+
+            <!-- Category 6 -->
+            <div class="category-card">
+                <img src="business.jpg" alt="Business Books">
+                <div class="category-overlay">
+                    <h3>Business</h3>
+                    <p>Gain insights into the world of business and entrepreneurship.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Business</a>
+                </div>
+            </div>
+
+            <!-- Category 7 -->
+            <div class="category-card">
+                <img src="travel.jpg" alt="Travel Books">
+                <div class="category-overlay">
+                    <h3>Travel</h3>
+                    <p>Explore the world through captivating travel narratives.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Travel</a>
+                </div>
+            </div>
+
+             <!-- Category 6 -->
+             <div class="category-card">
+                <img src="business.jpg" alt="Business Books">
+                <div class="category-overlay">
+                    <h3>Business</h3>
+                    <p>Gain insights into the world of business and entrepreneurship.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Business</a>
+                </div>
+            </div>
+
+             <!-- Category 6 -->
+             <div class="category-card">
+                <img src="business.jpg" alt="Business Books">
+                <div class="category-overlay">
+                    <h3>Business</h3>
+                    <p>Gain insights into the world of business and entrepreneurship.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Business</a>
+                </div>
+            </div>
+
+             <!-- Category 6 -->
+             <div class="category-card">
+                <img src="business.jpg" alt="Business Books">
+                <div class="category-overlay">
+                    <h3>Business</h3>
+                    <p>Gain insights into the world of business and entrepreneurship.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Business</a>
+                </div>
+            </div>
+
+             <!-- Category 6 -->
+             <div class="category-card">
+                <img src="business.jpg" alt="Business Books">
+                <div class="category-overlay">
+                    <h3>Business</h3>
+                    <p>Gain insights into the world of business and entrepreneurship.</p>
+                    <a href="#" style="color: #fff; text-decoration: underline;">Explore Business</a>
+                </div>
+            </div>
+            <!-- End of additional categories -->
+        </div>
+        <!-- End of Category Grid -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Online Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+</html>

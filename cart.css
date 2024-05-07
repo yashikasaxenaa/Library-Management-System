@@ -1,0 +1,140 @@
+#cart{
+    display: flex;
+    background-color: white;
+    height: 50px;
+    width: 200px;
+    justify-content: center;
+    border-radius: 7%;
+}
+#cart-items{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width:900px;
+
+}
+.items{
+    display: flex;
+
+}
+.images{
+    height: 150px;
+    width: 200px;
+    display: flex;
+}#more{
+    color: blue;
+    background-color: white;
+    width: 50px;
+    border: none;
+    transition-property: active;
+    transition-timing-function: steps(1);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+}
+.class{
+    display: flex;
+    flex-direction: row;
+}
+#more:active{
+    background-color: rgb(152, 152, 226);
+}
+#saved-for-later{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width:900px;
+    font-size: x-large;
+}
+#buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    width: 350px;
+    background-color:white;
+    border: 1px solid white;
+    position: absolute;
+    right: 25px;
+    top: 0px;
+}
+nav{
+    display: flex;
+    background-color: rgb(36, 80, 134);
+    justify-content: stretch;
+    position: fixed;
+    width:97vw;
+    border: 5px solid coral;
+    border-radius: 1%;
+    height: 55px;
+    z-index: 2;
+}
+.nav{
+    background-color: rgb(36, 80, 134) ;
+    border: none;
+    size: 10px;
+}
+main{
+    width: 100vw;
+    position: absolute;
+    top: 80px;
+    
+}
+#suggestion1{
+    display: flex;
+    height: fit-content;
+    width: 350px;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 5%;
+    position: absolute;
+    right: 25px;
+    top: 200px;
+}
+#suggestion2{
+    display: flex;
+    height: fit-content;
+    width: 350px;
+    background-color:white;
+    border: 1px solid black;
+    border-radius: 5%;
+    position: absolute;
+    right: 25px;
+    top: 200px;
+}
+#saveditems{
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#span{
+    border: none;
+    background-color: white;
+    color: blue;
+}
+.buttons{
+    display:inline-flex;
+    
+}
+#proceed-to-buy{
+    height : 30%;
+    width : 80%;
+    align-self: center;
+    border-radius: 10px;
+    background-color: rgb(142, 183, 210)
+}
+#items-selected{
+    align-self: center;
+}
+#sell{
+    position: relative;
+    top: 21%;
+}
+.book_name{
+    border: none;
+    color : blue;
+    background-color: white;
+}

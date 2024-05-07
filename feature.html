@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Books</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section.featured-books {
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .book-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .book-card h3 {
+            color: #333;
+        }
+
+        .book-card p {
+            color: #666;
+        }
+
+        .book-card button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .book-card button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="featured-books">
+        <h2>Featured Books</h2>
+        
+        <!-- Featured Book Cards -->
+        <div class="book-container">
+            <!-- Repeat the following book card structure for each featured book -->
+            <div class="book-card">
+                <img src="book1.jpg" alt="Book Title 1">
+                <h3>Book Title 1</h3>
+                <p>Author: Author Name</p>
+                <p>Price: $19.99</p>
+                <button onclick="addToCart('Book Title 1')">Add to Cart</button>
+            </div>
+            <!-- End of book card structure -->
+
+            <!-- Repeat for more books -->
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Online Bookstore. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(bookTitle) {
+            alert('Added ' + bookTitle + ' to the cart!');
+        }
+    </script>
+</body>
+</html>
